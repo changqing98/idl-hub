@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "github.com/changqing98/idl-hub/idl_gen/base";
+package base;
+
+message BaseRequest {
+  string env = 1;
+  map<string, string> extra = 15;
+}
+
+message BaseResponse {
+  int32 code = 1;
+  string message = 2;
+  map<string, string> extra = 15;
+}
