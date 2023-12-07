@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./userhub";
+import "base/base.proto";
+import "google/protobuf/wrappers.proto";
+
+
+service UserhubService {
+  rpc Login(LoginRequest) returns (LoginResponse) {}
+}
+
+message LoginRequest {
+  base.BaseRequest baseReq = 15;
+}
+
+message LoginResponse {
+  base.BaseResponse baseResp = 15;
+}

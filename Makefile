@@ -1,5 +1,8 @@
 .PHONY: idl_gen
 
+userhub:
+	make idl_gen app=userhub
+
 demo:
 	 make idl_gen app=demo
 
